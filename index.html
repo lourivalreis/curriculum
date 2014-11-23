@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>Curriculum vitae</Title>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/app.css"/>
+    <script type="text/javascript" src="App/app.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body> 
+      <div id="plano_fundo"></div>
+      <header id="curriculo">          
+	       <h1>Curriculum - Lourival Alves dos Reis</h1>
+		   
+		   <h2>Áreas de Atuação</h2>
+			<div id="areas_afins">
+     			<ul>
+	    			<li>Analista de Sistemas</li>
+		 	    	<li>Desenvolvedor Web</li>
+				    <li>Operador de Logística</li>
+				   <li>Locutor</li>
+				   <li>Mestre de Cerimônias</li>
+			    </ul>
+			</div>
+		    <div id="dados_pessoais">
+		        <img src="img/3x4.png">
+		        <h2>Dados Pessoais:</h2>
+				<label>Endereço:</label><span>Rua Dois, 2 apto 102 - Novo Riacho - Contagem - MG</span><br />
+				<label>Idade:</label><span >44 anos</span><br />
+				<label>Telefones:</label><span>(31) 2567-2423 / (31) 9958-2423</span><br />
+				<label>Site:</label><a class="site" href="http://www.lourivalreis.com.br" target="_blank">www.lourivalreis.com.br</a><br />
+				
+			</div>
+			<div class="formacao_universitaria">
+		        <h2>Formação:</h2>
+				<h3>Pós-graduação:</h3>
+				<label>Curso:</label><span>Desenvolvimento de Aplicações WEB</span><br />
+				<label>Entidade:</label><span>IEC - Puc Minas</span><br />
+				<label>Período:</label><span>De setembro de 2014 a dezembro de 2015 (Em andamento)</span><br />
+				
+				<h3>Pós-graduação:</h3>
+				<label>Curso:</label><span>Gerência de Telecomunicações e Redes de computadore - GTRC  </span><br />
+				<label>Entidade::</label><span>Universidade FUMEC</span><br />
+				<label>Período:</label><span>fevereiro a dezembro de 2002</span><br />
+				
+				<h3>Graduação:</h3>
+				<label>Curso:</label><span>Superior em Tecnologia de Processamento de Dados</span><br />
+				<label>Entidade::</label><span>Universidade FUMEC</span><br />
+				<label>Período:</label><span>1994 a dezembro de 1997</span><br />
+				
+			</div>
+			
+			<div id="experiencia_profissional">
+			    <h2>Experiências profissionais:</h2>
+				<div class="empresa" >
+		   			<label>Empresa:</label><span>Pontifícia Universidade Católica de Minas Gerais</span><br />
+				    <label>Período:</label><span>15/03/2004 - Atual</span><br />
+					<label>Posição:</label><span>Analista Administrativo Pleno</span>
+					<h3>Atividades:</h3>
+					<ul>
+						<li>Gestor de espaço físico</li>
+						<li>Análise de projetos pedagógicos</li>
+						<li>Desenvolvimento de aplicações de pequeno porte</li>
+						<li>Suporte a eventos</li>
+					</ul>
+				</div>
+				<div class="empresa" >
+		   			<label>Empresa:</label><span>Globalvalue Solutions FIAT/IBM</span><br />
+				    <label>Período:</label><span>01/03/2001 - 15/02/2004</span><br />
+					<label>Posição:</label><span>Desenvolvedor PJ</span>
+					<h3>Atividades:</h3>
+					<ul>
+						<li>Desenvolvimento de aplicações em Clipper e Delphi </li>
+						<li>DBA no banco Postgree </li>
+						<li>Analista de negócios das aplicações C/S área atuarial</li>
+					</ul>
+				</div>
+				<div class="empresa" >
+		   			<label>Empresa:</label><span>Associação Brasileira de Odontologia - MG</span><br />
+				    <label>Período:</label><span>01/06/1992 - 15/02/2001</span><br />
+					<label>Posição:</label><span>Gerente de Informática</span>
+					<h3>Atividades:</h3>
+					<ul>
+						<li>Levantamento de requisições de sistemas </li>
+						<li>Site survey</li>
+						<li>Analista e desenvolvedor das aplicações C/S Delphi</li>
+					</ul>
+				</div>
+				<div class="empresa" >
+		   			<label>Empresa:</label><span>Contar Informática</span><br />
+				    <label>Período:</label><span>01/06/1992 - 15/02/2004</span><br />
+					<label>Posição:</label><span>Proprietário</span>
+					<h3>Atividades:</h3>
+					<ul>
+						<li>Desenvolvimento de Sistemas ERP  </li>
+						<li>Desenvolvimento de Sistemas Odontológicos</li>
+						<li>Desenvolvimento de Sistemas Imobiliários</li>
+						<li>Suporte em redes locais em diversas empresas</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="lista_curriculos">
+		        <h2>Rede de profissionais:</h2>
+				<table id="tabela">
+					<thead>
+						<th>Nome</th><th>Mini-Currículo</th>
+					</thead>
+					<tbody>
+					   
+					</tbody>
+				</table>
+				<script>
+					$.getJSON("http://rarolabs.com.br:88/alunos.json", "json", function(data) {
+					$.each(data, function(key, val) {
+				    
+					$("#tabela tbody").append("<tr><td id='nome'><a href='"+val['link_html'] +"'>"+val['nome']+"</a></td><td>"+val['mini_curriculo']+"</td></tr>")
+					
+						});
+					});
+				</script>
+							
+			</div>
+				
+
+			
+			
+			
+		   
+	       
+		</header>   
+	
+</body>
+</html>
