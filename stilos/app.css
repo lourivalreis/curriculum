@@ -1,0 +1,295 @@
+/*Todo o CSS deve ficar aqui*/
+
+body {
+	padding:0;
+	margin:0;
+	width:100%;
+	font-family:Arial, Georgia, Serif;
+	font-size:12px;
+	background-image:url("fundo.jpg");
+	background-size:100% 100%;
+}
+#plano_fundo {
+	z-index:-1;
+	position:fixed;
+	bottom:0;
+	margin-left:100px;
+	width:205px;
+	height:400px;
+	background-size:100% 100%;
+	/* Aplicando Sombra */
+	-webkit-filter:drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+	/* Firefox */
+	filter:url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='12' dy='12' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+	/* IE */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter:"progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+#curriculo {
+	z-index:100%;
+	width:769px;
+	min-height:1100px;
+	margin:10px auto;
+	padding:10px;
+	background-color:rgba(255, 240, 245, 0.7);
+	-webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+}
+
+ul {
+	margin:0;
+	padding:0;
+	margin-left:20px;
+}
+	
+/**  Dados Pessoais */
+#dados_pessoais {
+	margin-top:10px;
+	width:100%;
+	display:table; 
+}
+.info_pessoais {
+	width:610px;
+	float:left;
+	margin-left:10px;
+}
+img {
+	float:left;
+	width:100px;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+	/* border:5px ridge #5B696C; */
+}
+/**  Separa o cabeçalho */
+
+
+table {
+ 
+        font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+        
+        border-collapse:collapse;
+      }
+      table td, th
+      {
+        border:1px solid #20B2AA;
+        padding:3px 7px 2px 7px;
+		
+      }
+      table th
+      {
+        font-size:1.2em;
+        text-align:left;
+        padding-top:5px;
+        padding-bottom:4px;
+        background-color:rgba(255, 140, 000, 0.5);
+        color:black;
+      }
+      table tr.alt td
+      {
+        color:#000;
+        background-color:#D6EDFF;
+      }
+#nome 
+	  {
+	  	width:30%;
+		
+	}
+#nome a {
+	cursor:pointer;
+	font-size:15px;
+	font-family:Tahoma;
+	font-style:normal;
+	font-size:15px;
+	color:#8B3A3A;
+}
+	
+#nome a:hover {
+	color:#CD8500;
+	text-decoration:underline;
+    
+}	
+	  
+	
+	
+	
+
+
+
+#lista_curriculos, #cursos_computacao, #cursos_web, #formacao_universitaria, #areas_afins, #objetivo_profissional, #experiencia_profissional {
+	width:100%;
+	display:table;
+}
+#areas_afins ul {
+	margin:0;
+	padding:0;
+	style:float:left;
+	/* list-style-type:circle; */
+}
+#areas_afins ul li {
+	display:inline;
+	margin:0 0 0 40px;
+	padding:0;
+}
+#areas_afins ul li:first-child {
+	margin-left:10px;
+}
+.formacao, .programacao, .computacao {
+	width:49%;
+	float:left;
+}
+
+.programacao ul, .computacao ul {
+	float:left;
+	display:block;
+	width:44%;
+}
+.empresa {
+	/* width:754px; */
+	width:367px;
+	height:145px;
+	border:2px ridge rgb(238, 233, 233);
+	float:left;
+	margin-left:2px;
+	margin-top:2px;
+	background-color:rgba(238, 233, 233, 0.5);
+	border-radius:4px;
+	padding:5px;
+}
+h1 {
+	width:754;
+	border:2px ridge rgb(173, 216, 230);
+	text-align:center;
+	margin:0 auto;
+	background-color:rgba(255, 140, 000, 0.5);
+	font-family:Calibri;
+	font-size:28px;
+	padding:5px 0;
+	border-radius:4px;
+}
+
+h2 {
+	
+	width:754;
+	border:2px ridge rgb(173, 216, 230);
+	text-align:left;
+	margin:10 auto;
+	background-color:#20B2AA;
+	font-family:Calibri;
+	font-size:18px;
+	font-color:rgb(255,255,255);
+	color:rgb(255,255,255);
+	padding:5px 0;
+	border-radius:4px;
+	
+	/*background-image: url(http://i.imgur.com/gDOVUqt.png) no-repeat; não deu o efeito que quero*/
+}
+h2:hover {
+	/*text-shadow:-1px -1px white, 1px 1px #333;*/
+}
+h3 {
+	margin:5px 0 0 0;
+	font-family:Tahoma;
+	font-style:normal;
+	font-size:13px;
+	color:#8B3A3A;
+	}
+label {
+	margin-left:10px;
+	font-size:13px;
+	font-weight:bold;
+}
+span, .site {
+	margin-left:10px;
+}
+a {
+	cursor:pointer;
+	font-style:normal;
+	font-size:12px;
+	color:#19697D;
+	margin-right:10px;
+	text-decoration:none;
+}
+a:hover {
+	color:#CD8500;
+}
+#outras_empresas_span {
+	margin-left:0px;
+}
+p {
+	margin:0;
+	padding:0;
+	text-align:justify;
+}
+
+/** Botões */
+.controls {
+	z-index:3;
+	display:table;
+	margin-top:22px;
+	margin-right:20px;
+}
+.controls > a{
+	float:left;
+	background:#cecece url(botoes.jpg) repeat-x center top;
+	font-weight:bold;
+	padding:5px 10px;
+	color:#5e5e5e;
+	margin-left:2px;
+	text-decoration:none;
+	font-size:100%;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	box-shadow:0 1px 3px #999;
+	-moz-box-shadow:0 1px 3px #999;
+	-webkit-box-shadow:0 1px 3px #999;
+	text-shadow:0 1px 1px #fff;
+	text-transform:uppercase;
+	border:0;
+	border-bottom:1px solid #5e5e5e;
+	cursor:pointer;
+	outline:none;
+	position:relative;
+}
+
+.circular {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	/*background: url(http://link-to-your/image.jpg) no-repeat;*/
+	background: url(http://www.lourivalreis.com.br/fotos/foto%20(8).jpg) no-repeat;
+	
+
+	}
+
+.controls a:hover{
+	background:#5e5e5e;
+	text-shadow:0 -1px 1px #000;
+	color:#fff;
+	text-decoration:none;
+}
+
+/*CSS para impressão*/
+@media print {
+	* {
+		color:#000000 !important;
+		text-shadow:none !important;
+	}
+	.controls, #outras_empresas_span {
+		display:none;
+	}
+	a {
+		margin-right:0px;
+	}
+	#curriculo {
+		margin:0 auto;
+	}
+	h1 {
+		border:1px solid rgb(0, 0, 0);
+	}
+}
+
