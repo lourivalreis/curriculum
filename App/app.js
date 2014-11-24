@@ -1,6 +1,6 @@
 //Todo o java script do jogo deve ser colocado aqui
-
-$('idade').onclick(function()){
+  alert('opsjkjhjhjhjhjkhljkhjhljh');
+$('idade').onload(function()){
   alert('ops');
   document.getElementById('idade').innerHTML='Boa noite'; //tentativa frustrada de colocar o span idade e calcular a idade automática
 }
