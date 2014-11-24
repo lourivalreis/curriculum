@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
 	<title>Curriculum vitae</Title>
-	<link rel="stylesheet" type="text/css" media="screen" href="stilos/app.css"/>
-	<script type="text/javascript" src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="estilos/app.css"/>
+	<script type="text/javascript" src="scripts/pega_lista.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  </head>
 <body> 
@@ -116,15 +116,7 @@
 				
 							
 			</div>	
-			<script>
-					$.getJSON("http://rarolabs.com.br:88/alunos.json", "json", function(data) {
-					$.each(data, function(key, val) {
-				    
-					$("#tabela tbody").append("<tr><td id='nome'><a href='"+val['link_html'] +"'>"+val['nome']+"</a></td><td>"+val['mini_curriculo']+"</td></tr>")
-					
-						});
-					});
-				</script>
+			
 		</header>   
 	
 </body>
